@@ -51,4 +51,161 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: var(--bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary:#051e8d;
+  --secendory:#000000;
+  --bg:#ffffff;
+  --text:#5c5b5b;
+  --sub-text:#909090;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.flex-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.flex-46 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46%;
+          flex: 0 1 46%;
+}
+
+.flex-50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.flex-70 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+
+form {
+  padding: 55px 0;
+}
+
+fieldset {
+  padding: 25px 0;
+}
+
+.form-control {
+  display: block;
+  border: none;
+  border: 1px solid var(--primary);
+  width: 100%;
+}
+
+label.side {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+input, select, textarea {
+  padding: 12px 8px;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  outline: 0;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+textarea {
+  font-size: 16px;
+  color: var(--sub-text);
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+}
+
+.work {
+  line-height: 2;
+}
+
+a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  text-align: center;
+  margin: 25px;
+  padding: 12px 26px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  width: 25%;
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+footer {
+  font-size: 12px;
+  color: var(--sub-text);
+  text-align: center;
+  padding: 25px 0;
+}
+
+strong {
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */

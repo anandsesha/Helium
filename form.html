@@ -10,13 +10,136 @@
         <script src="https://kit.fontawesome.com/2e5837ff2f.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>          
-        </header>
-
         <main>
+            <form class="container">
+                <fieldset>
+                    <label  class="side">
+                        Personal Info
+                        <label>
+                            Name:
+                            <div class="flex">
+                                <input  id="first_name" class="form-control flex-46" type="text" name="first_name" placeholder="First Name">
+                                <input  id="last_name" class="form-control flex-46" type="text" name="last_name" placeholder="Last Name">
+                            </div>                            
+                        </label>
+                        <div class="flex">                            
+                            <label class="flex-46">Date of Birth:
+                                <input id="dob" class="form-control" type="date" name="dob"  placeholder="date of birth" >
+                            </label>
+                            <label class="flex-46">Gender:
+                                <select id="gender" class="form-control" name="gender" type="radio" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label class="side">Contact
+                            <div class="flex">
+                                <label class="flex-46">
+                                    Email:
+                                    <input id="email" class="form-control" type="email" name="email" placeholder="Your Email">
+                                </label>
+                                <label class="flex-46">
+                                    Mobile:
+                                    <input id="phone" class="form-control" type="tel" name="phone" placeholder="Phone Number">
+                                </label>
+                            </div>   
+                            <label >
+                                Address:
+                                <input id="address" class="form-control" type="address" name="address" placeholder="Full Adress">
+                            </label>                                                     
+                        </label>                                                
+                    </label>                    
+                </fieldset>
+                <fieldset>
+                    <label class="side"> 
+                        About
+                        <input id="about" type="text-area"  class="form-control" maxlength="500"
+                        placeholder="Detailed discription about your self">
+                    </label>
+                    <div class="flex">
+                        <label class="flex-46">
+                            Intrest:
+                            <select id="intrest" class="form-control" name="intrest" >
+                                <option value="Psychology">Psychology</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Adminstartion">Administration</option>
+                                <option value="Publick Service">Publick Service</option>
+                                <option value="Cripto">Cripto</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="other">Other</option>
+                                <option value="other">
+                                    <input id="other_intrest" class="form-control" type="text" placeholder="Others">
+                                </option>
+                            </select>
+                        </label>
+                        <label class="flex-46">
+                            Hobbies:
+                            <select id="hobbies" class="form-control" name="hobbies" >
+                                <option value="Football">Football</option>
+                                <option value="Skipping">Skipping</option>
+                                <option value="Traveling">Traveling</option>
+                                <option value="Garding">Garding</option>
+                                <option value="Criket">Criket</option>
+                                <option value="Singing">Singing</option>
+                                <option value="Dancing">Dancing</option>
+                                <option value="Painting">Painting</option>
+                                <option value="Traveling">Traveling</option>
+                                <option value="Riding">Riding</option>
+                                <option value="Cooking">Cooking</option>
+                                <option value="other">Other</option>
+                                <option value="other">
+                                    <input id="other_hobbies" class="form-control" type="text" placeholder="Others">
+                                </option>
+                            </select>
+                        </label>
+                    </div>                    
+                </fieldset>
+                <fieldset>
+                    <label class="side">
+                        Education:
+                        <div class="flex">
+                            <div class="flex-46 flex">    
+                                <input id="batch" class="form-control flex-46" type="text" placeholder="Batch">               
+                                <input id="intitution" class="form-control flex-46" type="text" placeholder="Institution Name">
+                            </div>                       
+                            <textarea id="Course" class="form-control flex-50" row="10" cols="70" type="text-area">Course Discription </textarea>
+                        </div>                        
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label class="side">
+                        Work Experince:
+                        <div class=" work flex">
+                            <div class="flex-20 flex">
+                                <input id="join_date" class="form-control flex-46" type="text" placeholder="Joining Date">
+                                <input id="last_date" class="form-control flex-46" type="text" placeholder="Last Date">
+                            </div>                            
+                            <input id="company" class="form-control flex-30" type="text" placeholder="Company Name">
+                            <textarea id="job_discription" class="form-control flex-40" type="text-area" >Discription</textarea>
+                        </div>
+                        <div class="work flex">
+                            <div class="flex-20 flex">
+                                <input id="join_date" class="form-control flex-46" type="text" placeholder="Joining Date">
+                                <input id="last_date" class="form-control flex-46" type="text" placeholder="Last Date">
+                            </div>                            
+                            <input id="company" class="form-control flex-30" type="text" placeholder="Company Name">
+                            <textarea id="job_discription" class="form-control flex-40" type="text-area">Discription</textarea>
+                        </div>                        
+                    </label>
+                </fieldset>
+                <div class="flex">
+                    <button class="submit">Submit</button>                
+                    <button class="reset">Reset</button>
+                </div>
+            </form>
         </main>
-
-        <footer>
+        <footer class="container">
+            <hr>
+            <small> Copyrights Reserved &copy; Team <strong>Helium,</strong><span> Dharamshala,Himachal Pradesh, India</span></small>
         </footer>
     </body>
 </html>
